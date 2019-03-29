@@ -6,11 +6,11 @@ contract Property{
     address public owner;
     
     // global variables 
-    uint public timestamp =block.timestamp;
-    uint public number = block.number;
-    uint public difficulty =block.difficulty;
-    uint public gaslimit = block.gaslimit;
-    
+    uint public timestamp =block.timestamp; // timestamp of the block created
+    uint public number = block.number;       // block number
+    uint public difficulty =block.difficulty; // difficulty value used to show how hard is it to find a hash
+    uint public gaslimit = block.gaslimit;  //maximum amount of gas allowed in a block to determine how many transactions can fit into a bloc
+ 
     
     uint public last_sent_value;
     
